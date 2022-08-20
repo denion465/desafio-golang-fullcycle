@@ -1,0 +1,16 @@
+POST http://localhost:8080/bank-accounts
+Content-Type: application/json
+
+{
+	"account_number": "1111-11"
+}
+
+###
+POST http://localhost:8080/bank-accounts/transfer
+Content-Type: application/json
+
+{
+	"from": "1111-11",
+	"to": "1111-11",
+	"amount": 100
+}	
